@@ -1,0 +1,80 @@
+# 🦁 Ruts Safaris – Enterprise Travel Portal
+[![Project Status](https://shields.io)](https://rutssafaris.co.ke)
+[![Infrastructure](https://shields.io)](#)
+[![Compliance](https://shields.io)](https://rutssafaris.co.ke)
+
+The official source code repository for the **Ruts Safaris** web platform ([www.rutssafaris.co.ke](https://rutssafaris.co.ke)). Headquartered at Mirage Plaza in Westlands, Nairobi, Ruts Safaris is a premier, tech-enabled tour operator specializing in curated, sustainable leisure itineraries and corporate travel management across East Africa.
+
+---
+
+## 🎯 Platform Objectives & Scope
+This repository powers the digital engine driving our Year 1 goal of executing **225+ high-value safari bookings** and scaling to **Ksh. 16,000,000 in annual revenue** by Year 3. The web interface serves four core segments:
+*   **Domestic Leisure (40%):** Value-focused weekend and holiday circuits.
+*   **International Independent Travelers (35%):** Eco-conscious wildlife expeditions.
+*   **Corporate & Institutional (15%):** 24/7 transfers, conference shuttles, and net-30 account workflows.
+*   **Diaspora & VFR (10%):** Trusted family-handling packages.
+
+---
+
+## 💎 Core Core Technical Features
+
+### 📅 Advanced Booking Engine
+*   **Dynamic Itinerary Builder:** Renders day-by-day interactive visual profiles for major circuits including Amboseli, Maasai Mara, Diani, and Samburu.
+*   **Integrated Add-ons:** Modular upselling controllers for premium items like Balloon Safaris and Photography packages.
+
+### 🔒 Enterprise Compliance & Security
+*   **KRA TIMS Middleware:** Programmed to interface directly with Kenya Revenue Authority (KRA) TIMS e-invoicing protocols.
+*   **Data Protection:** Client database schemas explicitly designed to respect the Kenya Data Protection Act 2019.
+*   **Access Hardening:** Server endpoints require an authenticated 2048-bit RSA key pair (`rutssafaris_key_rsa`).
+
+---
+
+## ⚙️ DevOps & Deployment Infrastructure
+
+The platform runs on a lean, automated architecture synced directly to our production environments.
+
+### 📂 Directory Architecture
+```text
+├── .github/                   # Automated deployment webhooks
+├── assets/                    # Optimized frontend dependencies
+│   ├── css/                   # Responsive layout styling
+│   ├── js/                    # Core payment & booking logic
+│   └── images/                # Highly compressed wildlife & lodge media assets
+├── templates/                 # Reusable structural components (Nav, Footer)
+├── .gitignore                 # Exclusion rules for local environment credentials
+├── index.html                 # Main landing portal
+└── README.md                  # System documentation (This file)
+```
+
+### 🌐 Target Production Path
+Code merged into the production branch triggers automated synchronization with the host control panel filesystem:
+```path
+domains/rutssafaris.co.ke/public_html/
+```
+
+---
+
+## 🛠️ Local Development & Setup
+
+To replicate the project environment locally for feature testing:
+
+1.  **Clone the codebase:**
+    ```bash
+    git clone https://github.com
+    cd rutssafaris-web-portal
+    ```
+2.  **Initialize a lightweight preview server:**
+    ```bash
+    python3 -m http.server 8080
+    ```
+3.  **Access local instance:** Navigate to `http://localhost:8080` in your browser.
+
+---
+
+## 👥 Project Governance & Support
+*   **Founder & Managing Director:** Karen Jeptoo (Utalii College Alumna, Senior Tour Consultant)
+*   **Administrative Lead Email:** `info@rutssafaris.co.ke`
+*   **Registered HQ:** Suite 2B, Mirage Plaza, Waiyaki Way, Westlands, Nairobi, Kenya
+
+---
+© 2026 Ruts Safaris. All rights reserved. Confidential Infrastructure Codebase.
